@@ -1,0 +1,21 @@
+﻿# Сгенерированные данные и отчёты внутри проектов
+projects/*/data/raw/*
+projects/*/data/processed/*
+projects/*/data/*.sqlite
+projects/*/data/*.sqlite-journal
+projects/*/reports/*
+!projects/*/data/.gitkeep
+!projects/*/reports/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Редакторы и ОС
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
