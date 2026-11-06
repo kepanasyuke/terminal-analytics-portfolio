@@ -1,0 +1,21 @@
+﻿# Сгенерированные данные и отчёты — воспроизводятся командами из README
+data/raw/*
+data/processed/*
+data/*.sqlite
+data/*.sqlite-journal
+reports/*
+!data/.gitkeep
+!reports/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Редакторы и ОС
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
