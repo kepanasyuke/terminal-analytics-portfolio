@@ -5,6 +5,8 @@
 цифры: сойтись с процессингом, посчитать соблюдение SLA, заметить аномалию до того,
 как она станет простоем, и разобрать поток заявок поддержки.
 
+<p align="center"><img src="assets/pipeline.svg" alt="Схема: данные, расчёт, метрики, отчёт" width="900"></p>
+
 ## Происхождение проектов
 
 Это важно проговорить прямо, потому что вопрос возникает первым.
@@ -36,6 +38,17 @@
 | [`projects/pos-fleet-sla-analytics`](projects/pos-fleet-sla-analytics) | Соблюдение SLA и доступность парка, неустойка по договору | Схлопывание пересекающихся инцидентов, лимит штрафа на «договор × месяц» | 90 устройств, 299 инцидентов, неустойка 1,2 млн ₽, 11 устройств на замену | 7 |
 | [`projects/pos-transaction-anomaly-monitor`](projects/pos-transaction-anomaly-monitor) | Поиск аномалий в суточных показателях устройств | Медиана по дню недели как норма, MAD как разброс, двойной порог | 7 200 наблюдений, 43 аномалии: полнота 100 %, точность 81 % | 8 |
 | [`projects/servicedesk-ticket-analytics`](projects/servicedesk-ticket-analytics) | Аналитика заявок первой линии | Категоризация правилами, повторные обращения по той же причине | 2 500 заявок, точность правил 86 %, повторных 9,9 % | 9 |
+
+<table>
+<tr>
+<td width="50%"><a href="projects/pos-reconciliation-analytics"><img src="projects/pos-reconciliation-analytics/assets/preview.svg" alt="Сверка терминалов и процессинга" width="100%"></a></td>
+<td width="50%"><a href="projects/pos-fleet-sla-analytics"><img src="projects/pos-fleet-sla-analytics/assets/preview.svg" alt="SLA и доступность парка" width="100%"></a></td>
+</tr>
+<tr>
+<td width="50%"><a href="projects/pos-transaction-anomaly-monitor"><img src="projects/pos-transaction-anomaly-monitor/assets/preview.svg" alt="Мониторинг аномалий" width="100%"></a></td>
+<td width="50%"><a href="projects/servicedesk-ticket-analytics"><img src="projects/servicedesk-ticket-analytics/assets/preview.svg" alt="Аналитика заявок" width="100%"></a></td>
+</tr>
+</table>
 
 ## Структура
 
